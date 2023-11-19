@@ -1,5 +1,5 @@
 #include <stdio.h>
-float Kp = 0.1, Ki = 0.01, integral = 0;
+float Kp = 0.1, Ki = 0.01, integral = 0, dt = 0.01, preError = 0;
 
 float PI(float setPoint, float measure){
 	float error = 0, prop = 0;
